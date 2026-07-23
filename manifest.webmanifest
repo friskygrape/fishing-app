@@ -1,0 +1,17 @@
+{
+  "name": "Ontario Angler — Zone Regs",
+  "short_name": "ON Angler",
+  "description": "Fast, offline Ontario fishing regulations by zone: seasons, catch & size limits, and what's open today.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c2229",
+  "theme_color": "#0c2229",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

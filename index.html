@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ontario Angler — Zone Regs</title>
+  <meta name="description" content="Fast, offline Ontario fishing regulations by zone." />
+  <meta name="theme-color" content="#0c2229" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ON Angler" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="app-bar">
+    <a class="app-bar__home" href="#/" aria-label="Home">
+      <span class="app-bar__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 24" width="34" height="20"><path d="M2 12 C10 3, 26 3, 32 12 C26 21, 10 21, 2 12 Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M32 12 l6 -5 v10 z" fill="currentColor"/><circle cx="9" cy="10.5" r="1.6" fill="currentColor"/></svg>
+      </span>
+      <span class="app-bar__title">Ontario&nbsp;Angler</span>
+    </a>
+    <nav class="app-bar__nav" aria-label="Primary">
+      <a href="#/" data-nav="home">Zones</a>
+      <a href="#/reference" data-nav="reference">Reference</a>
+    </nav>
+  </header>
+
+  <main id="main" class="view" tabindex="-1"><!-- rendered by app.js --></main>
+
+  <footer class="app-foot">
+    <p>Convenience reference only — <strong>not a legal document</strong>. Confirm current rules at <span class="nowrap">ontario.ca/fishing</span>.</p>
+  </footer>
+
+  <!-- First-run disclaimer gate -->
+  <div class="modal" id="disclaimer" hidden>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="disc-h">
+      <h2 id="disc-h">Before you cast</h2>
+      <p id="disc-body"></p>
+      <button class="btn btn--primary" id="disc-ok">I understand</button>
+    </div>
+  </div>
+
+  <script src="js/data-species.js"></script>
+  <script src="js/data-gallery.js"></script>
+  <script src="js/data-zones.js"></script>
+  <script src="js/data-reference.js"></script>
+  <script src="js/season.js"></script>
+  <script src="js/geo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
